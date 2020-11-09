@@ -1,5 +1,7 @@
 package com.owen.study.reflect;
 
+import java.io.Serializable;
+
 /**
  * java.lang.Class 类的使用
  * @Author Owen Xu
@@ -28,7 +30,7 @@ public class ClassDemo1 {
         }
 
         /**
-         * clazz1, clazz2, clazz3都是Foo类的类类型，一个类只能有一个类类型,所以都是相等的
+         * clazz1, clazz2, clazz3都是Foo类的类型，一个类只能有一个类类型,所以都是相等的
          */
 
         //通过类的类型创建该类的实例
@@ -42,4 +44,4 @@ public class ClassDemo1 {
     }
 }
 
-class Foo {}
+class Foo implements Serializable {}
